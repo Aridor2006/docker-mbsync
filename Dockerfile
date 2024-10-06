@@ -27,3 +27,4 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community > /etc/apk/reposi
  && mkdir /var/cache/apk
 
 COPY root/ /
+RUN chmod +x /etc/cont-init.d/*.sh
